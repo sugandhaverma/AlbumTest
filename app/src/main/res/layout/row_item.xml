@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_frnd"
+        android:layout_margin="10dp"
+        >
+    <ImageView
+        android:id="@+id/artistImage"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        />
+
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artistImage"
+            android:layout_centerVertical="true"
+            android:text="Ricki Martin"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artistName"
+            android:id="@+id/artistSong"
+            android:layout_marginRight="15dp"
+            android:text="Maria"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAppearance="@drawable/gradient"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artistSong"
+            android:id="@+id/tvPrice"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="$120"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
